@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "Estadocuenta";
+}
+
+<style>
+    .input-sm {
+        width: 120px;
+        text-align: center;
+    }
+
+    table {
+        border: 1px solid black; /* Establece un borde negro de 1px alrededor de la tabla */
+    }
+
+    th, td {
+        border: 1px solid black; /* Establece un borde negro de 1px alrededor de cada celda */
+    }
+
+    header {
+        background-color: red;
+    }
+</style>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Estado de cuenta de tarjeta de crédito</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Información del cliente</h2>
+            <ul>
+                <li>Nombre del cliente: David Castro</li>
+                <li>Número de tarjeta: 5454*******2345</li>
+                <li>Fecha de corte: 16/02/2024</li>
+                <li>Fecha de pago: 02/03/2024</li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <h2>Totales</h2>
+            <ul>
+                <li>Cargos totales: $74.49</li>
+                <li>Abonos totales: $114.47</li>
+                <li>Saldo disponible: $1,875.00</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Transacciones</h2>
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Descripción</th>
+                        <th class="text-right">Cargo</th>
+                        <th class="text-right">Abono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>16/01/2024</td>
+                        <td>Super Selectos</td>
+                        <td class="text-right">$34.76</td>
+                        <td class="text-right"></td>
+                    </tr>
+                    <tr>
+                        <td>14/01/2024</td>
+                        <td>Despensa de Don Juan</td>
+                        <td class="text-right">$12.43</td>
+                        <td class="text-right"></td>
+                    </tr>
+                    <tr>
+                        <td>12/01/2024</td>
+                        <td>Recarga Tigo</td>
+                        <td class="text-right">$2.50</td>
+                        <td class="text-right"></td>
+                    </tr>
+                    <tr>
+                        <td>09/01/2024</td>
+                        <td>Recarga Digicel</td>
+                        <td class="text-right">$3.00</td>
+                        <td class="text-right"></td>
+                    </tr>
+                    <tr>
+                        <td>07/01/2024</td>
+                        <td>Farmacia San Nicolás</td>
+                        <td class="text-right">$54.00</td>
+                        <td class="text-right"></td>
+                    </tr>
+                    <tr>
+                        <td>01/01/2024</td>
+                        <td>Starbucks</td>
+                        <td class="text-right">$7.78</td>
+                        <td class="text-right"></td>
+                    </tr>
+                </tbody>
+            </table>
+             <button type="submit" class="btn btn-primary">Diciembre</button>
+            <button type="submit" class="btn btn-danger">Enero</button>
+        </div>
+       

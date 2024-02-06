@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    table {
+        border: 1px solid black; /* Establece un borde negro de 1px alrededor de la tabla */
+    }
+
+    th, td {
+        border: 1px solid black; /* Establece un borde negro de 1px alrededor de cada celda */
+    }
+
+    .btn {
+        margin-right: 10px;
+    }
+
+    header {
+        background-image: url(imagen.jpg);
+        background-color: red;
+    }
+
+</style>
+
+
+<div class="container">
+    <h1>Listado de Tarjetas2</h1>
+    <br>
+    <div class="row">
+        <div class="col-md-4" d-flex justify-content-end">
+            <input type="text" class="form-control" placeholder="Buscar">
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Número de Tarjeta</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+                    <tr>
+                        <td>25252525</td>
+                        <td>Alvaro </td>
+                        <td>ventura</td>
+                        <td>
+                            <button type="button" class="btn btn-primary">Estado de cuenta </button>
+                            <button type="button" class="btn btn-warning">Registar compra</button>
+                            <button type="button" class="btn btn-warning">Registar pago</button>
+                            <button type="button" class="btn btn-danger">Transacciones</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

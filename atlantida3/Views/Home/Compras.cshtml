@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "compras";
+}
+
+<style>
+    .input-sm {
+        width: 120px;
+        text-align: center;
+    }
+
+    table {
+        border: 1px solid black; /* Establece un borde negro de 1px alrededor de la tabla */
+    }
+
+    th, td {
+        border: 1px solid black; /* Establece un borde negro de 1px alrededor de cada celda */
+    }
+
+
+
+
+    header {
+
+        background-color: red;
+    }
+</style>
+<h1 class ="text-center">Registro de Compra</h1>
+<br>
+    <div class="container">
+       
+        <form action="/save-purchase" method="post">
+            <table class="table table-bordered">
+                <thead>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre del Cliente</td>
+                        <td>
+                            <input type="text" class="form-control input-sm text-center" id="name" name="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Número de Tarjeta de Crédito</td>
+                        <td>
+                            <input type="text" class="form-control input-sm text-center" id="card-number" name="card-number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fecha de Compra</td>
+                        <td>
+                            <input type="date" class="form-control input-sm text-center" id="date" name="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Descripción</td>
+                        <td>
+                            <input type="text" class="form-control input-sm text-center" id="description" name="description">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Monto</td>
+                        <td>
+                            <input type="number" class="form-control input-sm text-center" id="amount" name="amount">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+               <br>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <button type="reset" class="btn btn-danger">Cancelar</button>
+        </form>
+    </div>

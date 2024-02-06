@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Transacciones";
+}
+
+<style>
+    .input-sm {
+        width: 120px;
+        text-align: center;
+    }
+
+    table {
+        border: 1px solid black; /* Establece un borde negro de 1px alrededor de la tabla */
+    }
+
+    th, td {
+        border: 1px solid black; /* Establece un borde negro de 1px alrededor de cada celda */
+    }
+
+    header {
+        background-color: red;
+    }
+</style>
+
+
+<div class="row flex-column">
+    <h1 class="text-center">Transacciones</h1>
+    <h3>Información de la tarjeta</h3>
+  <div class="col-md-3">
+   
+    <div class="form-group">
+      <label for="nombreCliente">Nombre del cliente</label>
+      <input type="text" class="form-control" id="nombreCliente">
+    </div>
+    <div class="form-group">
+      <label for="numeroTarjeta">Número de tarjeta</label>
+      <input type="text" class="form-control" id="numeroTarjeta">
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <h2>Transacciones</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Número de autorización</th>
+          <th>Fecha</th>
+          <th>Descripción</th>
+          <th>Cargo</th>
+          <th>Abono</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2523442</td>
+          <td>25-05-24</td>
+          <td>Super selectos</td>
+          <td>23</td>
+          <td>34</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
